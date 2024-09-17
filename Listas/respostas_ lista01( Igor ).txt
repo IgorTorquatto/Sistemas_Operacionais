@@ -1,0 +1,20 @@
+
+ 1- Um sistema operacional gerencia o hardware do computador e fornece serviços essenciais para os programas de aplicação. Suas principais funções incluem o gerenciamento de processos, gerenciamento de memória, gerenciamento de arquivos, gerenciamento de dispositivos e gerenciamento de redes, além de garantir a segurança do sistema e oferecer uma interface para o usuário.
+
+2 - um programa em execução
+
+3- Gerenciar os recursos de hardware e software do computador.
+
+4 - Uma chamada de sistema é um pedido que um programa faz ao sistema operacional para executar tarefas que ele não pode realizar diretamente, como acessar o disco, gerenciar memória, ou se comunicar com outros dispositivos. Isso permite ao software usar os recursos do hardware de forma segura e controlada pelo sistema operacional.
+
+5 - pronto,executando e bloqueado
+
+6- Sistemas Monotarefas são capazes de executar uma tarefa de cada vez e sistemas multitarefas são capazes de executar várias tarefas simultaneamente.
+
+7 - A divisão do tempo do processador entre múltiplos processos.
+
+8 - Um sistema operacional de lote (Batch) processa tarefas em lotes de forma automática, sem interação do usuário durante a execução. Já um sistema operacional interativo permite interação contínua com o usuário, que pode fornecer comandos e receber respostas em tempo real.
+
+9 - No escalonamento de processos em um sistema multitarefa, o sistema mantém uma fila de processos prontos para executar e utiliza um algoritmo de escalonamento para escolher qual processo será executado. Quando um processo é selecionado, o sistema realiza uma troca de contexto, salvando o estado do processo atual e carregando o estado do processo escolhido. O processo selecionado é então executado, e seu estado é atualizado conforme necessário. Esse processo permite que múltiplos processos compartilhem o tempo de CPU de maneira eficiente e justa.
+
+10 - Os principais desafios na implementação de um sistema operacional incluem o gerenciamento eficiente de recursos como CPU e memória, garantir segurança e proteção contra acesso não autorizado, coordenar a execução de múltiplos processos e threads, otimizar desempenho e escalabilidade, oferecer suporte a uma ampla variedade de hardware, criar interfaces intuitivas para o usuário, e gerenciar atualizações e manutenção sem comprometer a estabilidade.

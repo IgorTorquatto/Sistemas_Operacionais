@@ -1,0 +1,19 @@
+1- Em programação concorrente, uma condição de corrida ocorre quando dois ou mais threads ou processos acessam e modificam um recurso compartilhado simultaneamente, resultando em comportamento imprevisível devido à falta de controle sobre a ordem de execução. Para evitar isso, utiliza-se a região crítica, que é uma parte do código onde o acesso ao recurso compartilhado é restrito a um único thread ou processo por vez, usando mecanismos de sincronização como locks ou mutexes, garantindo a execução correta e previsível do programa.
+
+2- A exclusão mútua é fundamental em sistemas operacionais para evitar condições de corrida e garantir a consistência dos dados quando múltiplos processos ou threads acessam recursos compartilhados. No entanto, embora essencial para a integridade do sistema, ela pode impactar negativamente o desempenho ao causar bloqueios, aumento de latência e redução do throughput, além de possibilitar problemas como deadlock e starvation, exigindo um equilíbrio cuidadoso entre correção e eficiência no gerenciamento de recursos.
+
+3 - Garantir que apenas um processo acesse um recurso compartilhado por vez.
+
+4 - O problema do produtor-consumidor exemplifica a necessidade de sincronização em sistemas operacionais, onde produtores geram dados e os colocam em um buffer, e consumidores retiram esses dados para processá-los. A sincronização é crucial para evitar conflitos, como produtores tentando adicionar dados a um buffer cheio ou consumidores tentando retirar dados de um buffer vazio. Mecanismos como locks ou semáforos coordenam o acesso ao buffer, garantindo que a produção e o consumo ocorram de forma ordenada e segura, mantendo a integridade dos dados e o funcionamento correto do sistema.
+
+5 - garantir que apenas uma thread possa acessar um recurso compartilhado por vez.
+
+6 -  sistemas distribuídos
+
+7 - um processo possui seu próprio espaço de endereçamento, enquanto uma thread compartilha o espaço de endereçamento de seu processo pai.
+
+8 - Um semáforo usa um contador para gerenciar o acesso a recursos compartilhados, permitindo múltiplos acessos simultâneos conforme o valor do contador, e é útil para coordenar a execução entre threads ou processos. Em contraste, um mutex garante acesso exclusivo a um recurso compartilhado, permitindo que apenas uma thread tenha acesso por vez, e é de propriedade da thread que o bloqueia, que deve desbloqueá-lo. Enquanto o semáforo pode permitir vários acessos simultâneos, o mutex garante exclusão mútua.
+
+9 -  consome ciclos de CPU enquanto espera por um recurso
+
+10 - Um deadlock em sistemas operacionais ocorre quando dois ou mais processos ou threads ficam bloqueados indefinidamente, esperando uns pelos outros para liberar recursos necessários para sua execução. Isso acontece quando cada processo retém um recurso e espera por outros recursos que estão sendo mantidos por outros processos, formando um ciclo de dependência sem solução. As quatro condições necessárias para que um deadlock ocorra são: exclusão mútua, segura/espera, recurso não preemptível e espera circular. Deadlocks são problemáticos porque podem resultar em um bloqueio total do sistema, onde nenhum dos processos envolvidos consegue avançar.

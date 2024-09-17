@@ -1,0 +1,10 @@
+Atividade de Sistemas Operacionais:
+
+implementar os seguintes algoritmos de escalonamento:
+fifo
+sjf (shortest job firist)
+round robin
+prioridade
+
+
+Em python ou C e ultizar listas para representar os processos

@@ -1,0 +1,20 @@
+1 - O despachante em um sistema operacional é responsável por trocar o contexto de um processo, permitindo que o próximo processo na fila de execução comece a ser processado pela CPU. Ele trabalha em conjunto com o escalonador, que decide qual processo será executado em seguida. O escalonador faz a escolha com base em um algoritmo de escalonamento, e o despachante realiza a troca de contexto, permitindo que essa escolha seja efetivada.
+
+2 - O escalonador de longo prazo seleciona quais processos serão admitidos na memória principal (RAM) a partir do conjunto de processos prontos para execução no disco, controlando a taxa de criação de novos processos. É acionado quando um novo processo é criado ou finalizado. O escalonador de médio prazo realiza a troca de processos entre a memória principal e o disco (swap), sendo acionado em situações de sobrecarga de memória, suspendendo processos para liberar espaço. Já o escalonador de curto prazo decide qual processo na fila de prontos será o próximo a utilizar a CPU, sendo acionado sempre que há uma interrupção, término de quantum, ou uma operação de I/O.
+
+3 - FCFS (First-Come First-Served)
+
+4 - Prioridade
+
+5 - O intervalo de tempo em que um processo pode executar antes de ser interrompido.
+
+6 - O algoritmo FCFS é simples e fácil de implementar, já que processa as tarefas na ordem de chegada, sem preempção. Suas vantagens incluem a previsibilidade e ausência de complexidade. No entanto, suas desvantagens são o risco de inanição de processos menores (caso processos longos cheguem primeiro) e o fenômeno de convoy effect, onde processos curtos podem esperar muito tempo. Ele é ideal em cenários como a impressão de documentos, onde a ordem de chegada é mais importante do que o tempo de execução.
+
+7 - Um processo cede voluntariamente o processador.
+
+8 - Uma interrupção é um sinal enviado à CPU que interrompe temporariamente a execução de um processo para que outro evento mais urgente seja tratado. Existem três tipos principais de interrupções: interrupções de hardware, geradas por dispositivos externos como teclados ou discos; interrupções de software, geralmente provocadas por exceções ou chamadas de sistema; e interrupções temporais, geradas pelo relógio do sistema para controlar o tempo de execução dos processos.
+
+9 - Salva o estado do processo atual e executa a rotina de tratamento da interrupção. 
+
+10 - A escolha de um algoritmo de escalonamento é influenciada por fatores como o tipo de carga de trabalho (tempo real ou batch), as prioridades dos processos, a necessidade de tempos de resposta rápidos em aplicações interativas, o overhead de gerenciamento, a equidade no acesso aos recursos e a disponibilidade de hardware, como o número de CPUs e a arquitetura do sistema. Esses elementos devem ser considerados em conjunto para otimizar o desempenho do sistema conforme suas necessidades específicas.
+
