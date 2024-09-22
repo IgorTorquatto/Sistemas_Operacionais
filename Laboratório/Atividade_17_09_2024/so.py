@@ -1,3 +1,5 @@
+#Equipe: Cícero Igor e Alexandre Marques
+
 import random
 
 class Processo:
