@@ -1,0 +1,53 @@
+O jogo é baseado no doorman simulator .
+
+O papel do jogador (gerenciador do sistema) será verificar informações dos personagens que chegam com base nas permissões e nos recursos disponíveis no sitema.
+( simular o gerenciamento de memória, controle de processos e alocação de recursos)
+
+Processos chegam com determinadas intruções ou pedidos de recurso ( CPU, memória ) . Cada processo terá uma série de informaçoes como o tempo de execução, prioridade e tipo de recurso necessário
+Dispositivos de entrada e saída também chegam pedindo autorização para relizar as entrada ou saídas do sistema
+
+exemplos:
+
+Exemplo de processo: Um personagem pode dizer: "Eu sou um processo com prioridade alta e preciso de 100MB de memória."
+Exemplo de dispositivo de entrada: O "teclado" pode dizer: "Eu tenho uma sequência de teclas que o usuário digitou, posso processar?"
+Exemplo de dispositivo de saída: A "impressora" pode dizer: "Posso imprimir esse documento que foi processado?"
+
+O jogador analisa se o pedido é válido ou não
+
+Exemplo de Processo: Um processo pede muita memória (100MB), mas o sistema só tem 50MB livres. O jogador precisa negar a entrada desse processo ou liberar memória de outros processos.
+Exemplo de Dispositivo de Entrada: Um dispositivo de mouse solicita acesso, mas o jogador verifica que ele não tem autorização para interagir com o sistema. Nesse caso, o jogador deve negar a entrada.
+
+
+Se o jogador permite um processo/dispositivo válido, o sistema gera uma saída correta:
+Ex: O processo de impressão acontece, a saída é gerada no monitor ou o documento é impresso corretamente.
+
+Se o jogador permite um processo ou dispositivo incorreto, o sistema gera uma saída com erro:
+Ex: Uma falha no sistema pode ocorrer, como uma tela azul, travamento, ou dados corrompidos.
+
+Quando isso acontece, o jogador perde uma vida.
+
+O jogador terá 3 vidas
+
+
+
+Exemplo Prático
+Cenário 1: Um processo chega
+
+Um processo aparece no balcão e diz: "Eu sou um processo que precisa de 50MB de memória e 10% de CPU."
+O jogador verifica a quantidade de memória livre no sistema e o uso atual de CPU.
+Se há recursos disponíveis, o jogador permite o processo, e ele é executado.
+Se não há recursos, o jogador pode tentar liberar recursos negando outros processos ou negar diretamente esse processo.
+
+Cenário 2: Um dispositivo de entrada chega
+
+Um "teclado" chega ao balcão e diz: "Eu recebi um comando de Ctrl + C, posso processar?"
+O jogador verifica se o comando é válido e se o dispositivo está autorizado.
+Se estiver tudo certo, o teclado é autorizado a processar o comando.
+Se há uma falha, como o teclado estar tentando enviar dados sem permissão, o jogador deve negar o pedido.
+Dessa forma, o jogador assume o papel de "gerenciador de sistema", controlando o que entra e sai no sistema operacional, garantindo que apenas processos válidos e dispositivos autorizados passem pelo "porteiro" do jogo.
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+1 - Um sistema de arquivos é a estrutura utilizada por sistemas operacionais para organizar, armazenar e gerenciar o acesso a dados em dispositivos de armazenamento, como discos rígidos e SSDs. Sua principal função é permitir que os dados sejam gravados, recuperados e gerenciados de forma eficiente, fornecendo uma maneira organizada de nomear, acessar e manipular arquivos e diretórios.
+
+2 - A fragmentação de um arquivo ocorre quando os dados de um arquivo são armazenados em partes não contíguas no disco, devido à falta de espaço contínuo. Isso pode levar a uma redução no desempenho do sistema, pois o tempo de leitura e gravação aumenta, já que a cabeça de leitura precisa buscar diferentes partes do disco para acessar o arquivo completo, em vez de ler de uma única sequência contínua.
+
+3 - Gerenciar a memória principal
+
+4 - FAT32
+
+5 - Encadeada
+
+6 - A alocação indexada tem a vantagem de permitir acesso direto a qualquer bloco de um arquivo, facilitando a leitura de arquivos fragmentados e otimizando o uso de espaço, mas pode ter maior overhead devido à necessidade de manter índices. Já a alocação encadeada é eficiente em termos de espaço e simples de implementar, mas o acesso a blocos requer leitura sequencial, o que pode ser lento para arquivos grandes ou altamente fragmentados, além de ser suscetível a problemas de perda de blocos se houver falhas na cadeia.
+
+7 - Causa fragmentação e prejudica desempenho
+
+8 - O journaling em sistemas de arquivos é uma técnica que registra as alterações planejadas em um log antes de serem aplicadas, o que ajuda a garantir a integridade dos dados. Suas principais vantagens incluem recuperação rápida após falhas, consistência de dados ao evitar estados inconsistentes e redução da perda de dados, pois permite que o sistema reverta para o último estado consistente em caso de interrupções, tornando-o ideal para sistemas que exigem alta confiabilidade.
+
+9 - Manter informações sobre um arquivo aberto, como sua posição atual e permissões.
+
+10 - Um sistema de arquivos distribuído é uma arquitetura que permite o armazenamento e gerenciamento de arquivos em múltiplos servidores ou nós de rede, apresentando-os como se estivessem disponíveis localmente. Exemplos incluem o Hadoop Distributed File System (HDFS), usado para big data, o Google File System (GFS), projetado para grandes volumes de dados, o Ceph, que oferece armazenamento unificado em ambientes de nuvem, e o GlusterFS, que permite a agregação de armazenamento em rede. Essas soluções são aplicadas em análise de dados, serviços de nuvem e em aplicações que requerem acesso rápido e confiável a dados distribuídos.
