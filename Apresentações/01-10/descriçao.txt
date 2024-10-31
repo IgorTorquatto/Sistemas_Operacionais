@@ -1,0 +1,2 @@
+
+O "Doorman System" é um jogo em que o jogador atua como um gerenciador de sistema, responsável por validar a entrada e saída de personagens que representam dispositivos de entrada, dispositivos de saída e processos. O jogador deve verificar se as solicitações feitas pelos personagens são válidas, como confirmar prioridades e verificar a disponibilidade de recursos, como memória. Com diferentes níveis de dificuldade, nosso jogo aborda conceitos de gerenciamento de processos e recursos em sistemas operacionai proporcionando feedback visual para o jogador

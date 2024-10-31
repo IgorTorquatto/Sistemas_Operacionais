@@ -1,0 +1,43 @@
+*Introdução:
+Nossa equipe vai falar um pouco mais sobre memória virtual e definindo oq é 
+
+A memória virtual é uma técnica utilizada pelos sistemas operacionais para gerenciar a memória de um computador 
+de forma eficiente.
+Ela permite que o sistema utilize mais memória do que a fisicamente disponível (RAM),
+armazenando temporariamente dados no disco rígido.
+
+para entender melhor memóra virtual devemos entender a diferença entre
+
+*Memória física vs Memória Virutal:
+
+Memória Física (RAM): É a memória principal do computador, onde os programas em execução
+armazenam dados temporariamente.
+
+Memória Virtual: É um espaço em disco utilizado para armazenar dados que não cabem na memória RAM,
+permitindo que o computador rode mais programas ao mesmo tempo.
+
+então com isso quando abrimos programas...
+*Como funciona Memória Virtual?
+
+Quando abrimos vários programas no computador ou trabalhamos com arquivos grandes,
+a memória RAM pode ficar lotada rapidamente.
+A RAM é onde o computador guarda dados temporários necessários para execução de programas
+que precisa acessar de forma rápida,mas ela tem um limite de capacidade.
+
+Para que o computador continue funcionando sem precisar fechar programas ou perder dados,
+o sistema operacional utiliza a memória virtual para ampliar temporariamente o espaço disponível.
+
+A memória virtual usa uma área do disco rígido, chamada arquivo de troca (ou "pagefile"), 
+como um espaço extra de armazenamento.
+Quando a RAM está cheia, o sistema move alguns dados menos usados da RAM 
+para esse arquivo de troca no disco rígido, 
+liberando espaço na RAM para que programas ou processos mais importantes possam continuar rodando rapidamente.
+
+Por a ram ser muito mais rapida do que o disco rigido quando o sistema precisa de um dado que esta em disco rigido
+precisa recuperar para a ram. sistema seleciona pagina menos importante da ram e troca de lugar com a que vai ser usada no disco rigido
+isso pode gerar lentidao ( falha de pagina quando a pagina necessária nao está na ram)
+
+Um exemplo é Imagine que sua RAM é como a mesa de trabalho e o disco rígido é 
+uma estante ao lado. Quando a mesa (RAM) fica cheia, você coloca alguns livros na estante 
+(disco) para abrir espaço para novos materiais. Assim, você mantém o trabalho organizado e 
+só volta a pegar o que está na estante quando precisar, evitando parar ou interromper o trabalho.
